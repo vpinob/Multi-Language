@@ -3,17 +3,16 @@ package appPackage;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import javax.swing.text.MaskFormatter;
 
 /**
- *
- */
+*
+*/
 @SuppressWarnings("serial")
 public class MyDateFormat extends MaskFormatter
 {
     private final SimpleDateFormat formato;
-    
+
     /**
      *
      * @throws ParseException
