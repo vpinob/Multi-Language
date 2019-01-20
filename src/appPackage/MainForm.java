@@ -33,8 +33,8 @@ import appPackage.properties.*;
 @SuppressWarnings("serial")
 public class MainForm extends JFrame
 {
-    private final JLabel JLabel1;
-    private final JLabel JLabel2;
+	private final JLabel JLabel1;
+	private final JLabel JLabel2;
 	private final JLabel JLabel3;
 	private final JLabel JLabel4;
 	private final JLabel JLabel5;
@@ -64,8 +64,8 @@ public class MainForm extends JFrame
     /** 
      *
      */
-    //@SuppressWarnings({"CallToPrintStackTrace", "OverridableMethodCallInConstructor"})
-    public MainForm() 
+	//@SuppressWarnings({"CallToPrintStackTrace", "OverridableMethodCallInConstructor"})
+	public MainForm() 
 	{	
 		/**
 		 * JLabel1
@@ -232,7 +232,7 @@ public class MainForm extends JFrame
 		closeButton.setBounds(760, 340, 120, 40);
 		closeButton.addActionListener((ActionEvent e) -> {
 			closeButtonActionListener();
-        });
+        	});
 		/**
 		 * JSeparator1
 		 */
