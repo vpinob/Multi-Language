@@ -8,7 +8,6 @@ import javax.swing.text.MaskFormatter;
 
 /**
  *
- * @author vpinob
  */
 @SuppressWarnings("serial")
 public class MyDateFormat extends MaskFormatter
