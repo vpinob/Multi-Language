@@ -353,27 +353,29 @@ public class MainForm extends JFrame
 	/**
 	 * 
 	 */
-	public void SelfRestart() {
-        StringBuilder cmd = new StringBuilder();
-        cmd.append(System.getProperty("java.home") + File.separator + "bin" + File.separator + "java ");
-        cmd.append("-cp ").append(ManagementFactory.getRuntimeMXBean().getClassPath()).append(" ");
-        cmd.append(MainForm.class.getName()).append(" ");
+	public void SelfRestart() 
+	{
+	
+		StringBuilder cmd = new StringBuilder();
+		cmd.append(System.getProperty("java.home") + File.separator + "bin" + File.separator + "java ");
+		cmd.append("-cp ").append(ManagementFactory.getRuntimeMXBean().getClassPath()).append(" ");
+		cmd.append(MainForm.class.getName()).append(" ");
 
-        try {
+		try {
 			Thread.currentThread();
-			Thread.sleep(1000);
+			Thread.sleep(3000);
 		} catch (InterruptedException e1) {
-			// TODO Auto-generated catch block
+		// TODO Auto-generated catch block
 			e1.printStackTrace();
-		} // 10 seconds delay before restart
-        try {
+		} // 3 seconds delay before restart
+		try {
 			Runtime.getRuntime().exec(cmd.toString());
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
+		// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-        System.exit(0);
-    }
+		System.exit(0);
+	}
 	/**
 	 * 
 	 */
