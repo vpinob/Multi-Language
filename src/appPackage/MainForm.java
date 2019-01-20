@@ -325,7 +325,7 @@ public class MainForm extends JFrame
 	private void engButtonActionListener()
 	{
 		Messages.changeLanguage("en", "EN");
-		SelfRestart();
+		ApplicationRestart();
 	}
 	/**
 	 * 
@@ -333,7 +333,7 @@ public class MainForm extends JFrame
 	private void norButtonActionListener()
 	{
 		Messages.changeLanguage("no", "NO");
-		SelfRestart();
+		ApplicationRestart();
 	}
 	/**
 	 * 
@@ -341,7 +341,7 @@ public class MainForm extends JFrame
 	private void spaButtonActionListener()
 	{
 		Messages.changeLanguage("es", "ES");
-		SelfRestart();
+		ApplicationRestart();
 	}
 	/**
 	 * 
@@ -353,7 +353,7 @@ public class MainForm extends JFrame
 	/**
 	 * 
 	 */
-	public void SelfRestart() 
+	public void ApplicationRestart() 
 	{
 	
 		StringBuilder cmd = new StringBuilder();
