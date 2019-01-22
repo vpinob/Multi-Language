@@ -320,7 +320,8 @@ public class MainForm extends JFrame
 	    }
 	}
 	/**
-	 * 
+	 * Changes the application language to English
+	 * The Class is restarted afterwards.
 	 */
 	private void engButtonActionListener()
 	{
@@ -328,7 +329,8 @@ public class MainForm extends JFrame
 		ApplicationRestart();
 	}
 	/**
-	 * 
+	 * Changes the application language to Norwegian
+	 * The Class is restarted afterwards.
 	 */
 	private void norButtonActionListener()
 	{
@@ -336,7 +338,8 @@ public class MainForm extends JFrame
 		ApplicationRestart();
 	}
 	/**
-	 * 
+	 * Changes the application language to Spanish
+	 * The Class is restarted afterwards.
 	 */
 	private void spaButtonActionListener()
 	{
