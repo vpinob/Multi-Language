@@ -13,7 +13,7 @@ public class Messages
 {
 	private static String BUNDLE_NAME = getLanguageProperties();
         
-	//@SuppressWarnings("StaticNonFinalUsedInInitialization")
+	@SuppressWarnings("StaticNonFinalUsedInInitialization")
 	private static ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 
 	public static String getBUNDLE_NAME() {
@@ -41,7 +41,7 @@ public class Messages
 	}
 	
         
-	//@SuppressWarnings("CallToPrintStackTrace")
+	@SuppressWarnings("CallToPrintStackTrace")
 	private static String getLanguageProperties() {
 
 		Properties prop = new Properties();
@@ -65,26 +65,26 @@ public class Messages
 			}
 		}
 		return language;
-	  }
+	}
 	
-		public static void changeLanguage(String language, String country) {
-				
-				Properties propertie = new Properties();
-				OutputStream outputStream = null;
-				
-				try {
-					
-					outputStream = new FileOutputStream("language.properties");
-			propertie.setProperty("language", "appPackage.properties.Messages_"+language+"_"+country);
-				propertie.store(outputStream, null);
-		
-			} 
-			catch (IOException io) { io.printStackTrace(); } 
-			finally {
-				if (outputStream != null) {
-					try { outputStream.close(); } 
-					catch (IOException e) { e.printStackTrace(); }
-				}
+	public static void changeLanguage(String language, String country) {
+
+			Properties propertie = new Properties();
+			OutputStream outputStream = null;
+
+			try {
+
+				outputStream = new FileOutputStream("language.properties");
+		propertie.setProperty("language", "appPackage.properties.Messages_"+language+"_"+country);
+			propertie.store(outputStream, null);
+
+		} 
+		catch (IOException io) { io.printStackTrace(); } 
+		finally {
+			if (outputStream != null) {
+				try { outputStream.close(); } 
+				catch (IOException e) { e.printStackTrace(); }
 			}
 		}
+	}
 }
